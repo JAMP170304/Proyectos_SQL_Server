@@ -1,7 +1,7 @@
---- PROYECTO 1 DÍA 1: NEOFINANZAS CORE SYSTEM
---Objetivo: Crear una estructura de base de datos de una billetera digital que soporte multiples monedas,estado de cuenta y prevención de fraudes.
+--- PROYECTO 1 DÃA 1: NEOFINANZAS CORE SYSTEM
+--Objetivo: Crear una estructura de base de datos de una billetera digital que soporte multiples monedas,estado de cuenta y prevenciÃ³n de fraudes.
 
---CREACIÓN DE LA BASE DE DATOS
+--CREACIÃ“N DE LA BASE DE DATOS
 CREATE DATABASE db_NeoFinanzas_Core
 ON PRIMARY
 (
@@ -40,7 +40,7 @@ CONSTRAINT UQ_Email UNIQUE(Email),
 );
 GO
 
--- CREACIÓN DE LA TABLA CUENTAS
+-- CREACIÃ“N DE LA TABLA CUENTAS
 CREATE TABLE tbl_Cuentas
 (
 ID_Cuenta INT IDENTITY(1,1), --PK
@@ -56,7 +56,7 @@ CONSTRAINT Ck_saldo CHECK(Saldo >= 0)
 );
 GO
 
---CREACIÓN DE LA TABLA TRANSACCIONES
+--CREACIÃ“N DE LA TABLA TRANSACCIONES
 CREATE TABLE tbl_Transacciones
 (
 ID_Transaccion INT IDENTITY(1,1), --PK
